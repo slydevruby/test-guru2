@@ -1,0 +1,57 @@
+.pointer {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.container-main {
+    min-height: 50rem;
+}
+
+// primary 
+$blue: #5c7cfa;
+
+// primary dark 
+//$gray-600: #374a96;
+$gray-600: #4057af;
+// #$gray-600: #aebefd;
+
+
+// surface
+// $body-bg: #B7C4CF;
+
+// accent
+$yellow: #fcc419;
+
+// danger
+$red: #d9480f;
+
+// .btn-primary, .btn-secondary, .btn-danger {
+//     color: white !important;
+// }
+
+
+.card {
+    width: 16rem;
+    // max-width: 18rem;
+}
+
+.nav-link {
+    transtition: all 0.2s;
+    color: $blue !important;
+
+    &:link, &:visited {
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+
+    &:hover, &:active {
+        border-bottom: 2px solid $yellow;
+    }
+}
+
+
+.marg-right-2 {
+    margin-right: 2rem;
+}

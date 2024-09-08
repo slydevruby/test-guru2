@@ -1,0 +1,163 @@
+# Files in the config/locales directory are used for internationalization and
+# are automatically loaded by Rails. If you want to use locales other than
+# English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more about the API, please read the Rails Internationalization guide
+# at https://guides.rubyonrails.org/i18n.html.
+#
+# Be aware that YAML interprets the following case-insensitive strings as
+# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
+# must be quoted to be interpreted as strings. For example:
+#
+#     en:
+#       "yes": yup
+#       enabled: "ON"
+
+en:
+  hello: "Hello world"
+  back: 'Back'
+  back_to_tests: 'Back to tests'
+  welcome: "Hello, %{email}"
+  confirm_delete: 'Are you sure?'
+  passed_test: 'You have passed the test! Your grade is %{result}%'
+  failed_test: 'You have failed the test! Your grade is %{result}%'
+  more_test: 'tests'
+  signin: 'Sign in'
+  signout: 'Sign out'
+  signup: 'Sign up'
+  remember_me: 'Remember me'
+  test_complete: 'You passed the %{test_title} test'
+  feedback_link: 'Send feedback'
+  feedback_saved: 'Your request have been sent'
+  feedback_not_saved: 'Your request cannot be sent'
+
+
+  devise:
+    shared:
+      links:
+        signin: "Sign in"
+        forgot_your_password: 'Forgot your password?'
+        not_receive_instructions: "Didn't receive confirmation instructions?"
+    registrations:
+      new:
+        signup: "Sign up"
+
+  application:
+    errors:
+      error:
+        one: "%{count} error detected"
+        other: "%{count} errors detected"
+    nav:
+      admin_panel: 'Admin panel'
+      gist_panel: 'Gist list'
+  
+  passages:
+    show:
+      out_of: 'out of'
+      next: 'Next question'
+      gist_question: 'Create gist'
+
+  tests:
+    index:
+      header: 'Test list'
+      new: 'New test'
+      show: 'Show'
+      edit: 'Edit'
+      delete: 'Delete'
+      level: 'Level'
+      total: 'Questions'
+    test:
+      start: 'Start'
+  feedbacks:
+    submit: 'Submit feedback'
+
+
+  admin:
+    tests:
+
+      index:
+        header: 'Test list'
+        new: 'New test'
+        show: 'Show'
+        edit: 'Edit'
+        delete: 'Delete'
+        level: 'Level'
+        total: 'Total questions'
+      create:
+        success: "Test %{title} successfully created"
+      show:
+        new: 'New test'
+        no_such_test: 'No such test'
+        back_to_tests: "Back to tests"
+      test:
+        show: 'Show'
+        edit: 'Edit'
+        edit_inline: 'Edit inline'
+        delete: 'Delete'
+      form_inline:
+        submit: "ОК"
+
+    questions:
+      show:
+        new_answer: 'New answer'
+        back_to_test: 'Back to test'
+        edit: 'Edit'
+      question:
+        show: 'Show'
+        edit: 'Edit'
+        delete: 'Delete'
+
+      index:
+        new: "New question"
+    answers:
+      show:
+        back_to_question: 'Back to question'
+      edit:
+        back_to_question: 'Back to question'
+        editing_answer: "Edit answer"
+      update:
+        success_updated: "Answer successfully updated"
+      new:
+        back: 'Back to question'
+        new: "New answer"
+      answer:
+        edit: "Edit"
+        delete: "Delete"
+    gists:
+      create:
+        success_gist: "<a href='%{url}' target='_blank' rel='nofollow noopener'>Gist</a> successfully created"
+        failure: 'Gist failed to create'
+
+  errors:
+    messages:
+      not_saved: 'Failed to save'
+  helpers:
+    select:
+      prompt: "Select category"
+    submit:
+      create: "Create %{model}"
+      update: "Update %{model}"
+    label:
+      test:
+        title: "Title"
+        level: "Level"
+        category_id: "Category id"
+        category: "Category"
+
+  test_mailer:
+    completed_test:
+      subject: 'You completed test'

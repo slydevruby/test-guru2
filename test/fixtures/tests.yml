@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+test1:
+  title: "full/1"
+  category: fullstack
+  author: clark
+  level: 3
+
+test2:
+  title: "full/2"
+  category: fullstack
+  author: clark
+  level: 3
